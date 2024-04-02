@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA10C55-0B24-4D6C-A8A9-F967F62DF2C4}|CMS.API\\CMS.API.csproj|e:\\iqbal yousuf\\clinic management system\\cms.api\\cms.api\\repositories\\implementation\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA10C55-0B24-4D6C-A8A9-F967F62DF2C4}|CMS.API\\CMS.API.csproj|solutionrelative:cms.api\\repositories\\implementation\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA10C55-0B24-4D6C-A8A9-F967F62DF2C4}|CMS.API\\CMS.API.csproj|E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\cms.api\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA10C55-0B24-4D6C-A8A9-F967F62DF2C4}|CMS.API\\CMS.API.csproj|solutionrelative:cms.api\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA10C55-0B24-4D6C-A8A9-F967F62DF2C4}|CMS.API\\CMS.API.csproj|E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\cms.api\\model\\patientsearchfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA10C55-0B24-4D6C-A8A9-F967F62DF2C4}|CMS.API\\CMS.API.csproj|solutionrelative:cms.api\\model\\patientsearchfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA10C55-0B24-4D6C-A8A9-F967F62DF2C4}|CMS.API\\CMS.API.csproj|E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\cms.api\\repositories\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA10C55-0B24-4D6C-A8A9-F967F62DF2C4}|CMS.API\\CMS.API.csproj|solutionrelative:cms.api\\repositories\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA10C55-0B24-4D6C-A8A9-F967F62DF2C4}|CMS.API\\CMS.API.csproj|E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\cms.api\\repositories\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA10C55-0B24-4D6C-A8A9-F967F62DF2C4}|CMS.API\\CMS.API.csproj|solutionrelative:cms.api\\repositories\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPatientRepository.cs",
+              "DocumentMoniker": "E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\CMS.API\\Repositories\\Interfaces\\IPatientRepository.cs",
+              "RelativeDocumentMoniker": "CMS.API\\Repositories\\Interfaces\\IPatientRepository.cs",
+              "ToolTip": "E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\CMS.API\\Repositories\\Interfaces\\IPatientRepository.cs",
+              "RelativeToolTip": "CMS.API\\Repositories\\Interfaces\\IPatientRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T12:44:55.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\CMS.API\\Repositories\\Interfaces\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "CMS.API\\Repositories\\Interfaces\\IBaseRepository.cs",
+              "ToolTip": "E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\CMS.API\\Repositories\\Interfaces\\IBaseRepository.cs",
+              "RelativeToolTip": "CMS.API\\Repositories\\Interfaces\\IBaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T12:43:41.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PatientSearchFilter.cs",
+              "DocumentMoniker": "E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\CMS.API\\Model\\PatientSearchFilter.cs",
+              "RelativeDocumentMoniker": "CMS.API\\Model\\PatientSearchFilter.cs",
+              "ToolTip": "E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\CMS.API\\Model\\PatientSearchFilter.cs",
+              "RelativeToolTip": "CMS.API\\Model\\PatientSearchFilter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T12:35:23.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\CMS.API\\Repositories\\Implementation\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "CMS.API\\Repositories\\Implementation\\PatientRepository.cs",
+              "ToolTip": "E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\CMS.API\\Repositories\\Implementation\\PatientRepository.cs",
+              "RelativeToolTip": "CMS.API\\Repositories\\Implementation\\PatientRepository.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAswDoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T23:48:02.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientsController.cs",
+              "DocumentMoniker": "E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\CMS.API\\Controllers\\PatientsController.cs",
+              "RelativeDocumentMoniker": "CMS.API\\Controllers\\PatientsController.cs",
+              "ToolTip": "E:\\Iqbal Yousuf\\Clinic Management System\\CMS.API\\CMS.API\\Controllers\\PatientsController.cs",
+              "RelativeToolTip": "CMS.API\\Controllers\\PatientsController.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAADwv18AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T23:46:03.305Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
