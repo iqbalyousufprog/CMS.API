@@ -36,6 +36,7 @@ namespace CMS.API.Controllers
                 {
                     PatientId = requestModel.PatientId,
                     DoctorId = requestModel.DoctorId,
+                    DepartmentId = requestModel.DepartmentId,
                     ConsultationDate = requestModel.ConsultationDate,
                     ConsultationTime = requestModel.ConsultationTime,
                     Remarks = requestModel.Remarks
@@ -51,6 +52,7 @@ namespace CMS.API.Controllers
                     Id = consultation.Id,
                     PatientId = consultation.PatientId,
                     DoctorId = consultation.DoctorId,
+                    DepartmentId = consultation.DepartmentId,
                     ConsultationDate = consultation.ConsultationDate,
                     ConsultationTime = consultation.ConsultationTime,
                     Remarks = consultation.Remarks,
@@ -106,6 +108,7 @@ namespace CMS.API.Controllers
                         Id = consultation.Id,
                         PatientId = consultation.PatientId,
                         DoctorId = consultation.DoctorId,
+                        DepartmentId = consultation.DepartmentId,
                         ConsultationDate = consultation.ConsultationDate,
                         ConsultationTime = consultation.ConsultationTime,
                         Remarks = consultation.Remarks,
@@ -123,6 +126,11 @@ namespace CMS.API.Controllers
                             Id = consultation.Doctor.Id,
                             DoctorName = consultation.Doctor.DoctorName,
                             Specialization = consultation.Doctor.Specialization
+                        },
+                        Department = new Model.Dtos.Department.ResponseDepartmentDto()
+                        {
+                            Id = consultation.Doctor.Id,
+                            Name = consultation.Department.Name
                         }
                     });
                 }
@@ -161,6 +169,7 @@ namespace CMS.API.Controllers
                     Id = consultation.Id,
                     PatientId = consultation.PatientId,
                     DoctorId = consultation.DoctorId,
+                    DepartmentId = consultation.DepartmentId,
                     ConsultationDate = consultation.ConsultationDate,
                     ConsultationTime = consultation.ConsultationTime,
                     Remarks = consultation.Remarks,
@@ -178,7 +187,13 @@ namespace CMS.API.Controllers
                         Id = consultation.Doctor.Id,
                         DoctorName = consultation.Doctor.DoctorName,
                         Specialization = consultation.Doctor.Specialization
+                    },
+                    Department = new Model.Dtos.Department.ResponseDepartmentDto()
+                    {
+                        Id = consultation.Doctor.Id,
+                        Name = consultation.Department.Name
                     }
+
                 };
 
                 responseObject.IsSuccess = true;
@@ -213,6 +228,7 @@ namespace CMS.API.Controllers
                     Id = id,
                     PatientId = requestModel.PatientId,
                     DoctorId = requestModel.DoctorId,
+                    DepartmentId = requestModel.DepartmentId,
                     ConsultationDate = requestModel.ConsultationDate,
                     ConsultationTime = requestModel.ConsultationTime,
                     Remarks = requestModel.Remarks
@@ -229,24 +245,25 @@ namespace CMS.API.Controllers
                     Id = consultation.Id,
                     PatientId = consultation.PatientId,
                     DoctorId = consultation.DoctorId,
+                    DepartmentId = consultation.DepartmentId,
                     ConsultationDate = consultation.ConsultationDate,
                     ConsultationTime = consultation.ConsultationTime,
                     Remarks = consultation.Remarks,
-                    Patient = new Model.Dtos.Patient.ResponsePatientDto()
-                    {
-                        Id = consultation.Patient.Id,
-                        Name = consultation.Patient.Name,
-                        Age = consultation.Patient.Age,
-                        Gender = consultation.Patient.Gender,
-                        PhoneNumber = consultation.Patient.PhoneNumber,
-                        Address = consultation.Patient.Address,
-                    },
-                    Doctor = new Model.Dtos.Doctor.ResponseDoctorDto()
-                    {
-                        Id = consultation.Doctor.Id,
-                        DoctorName = consultation.Doctor.DoctorName,
-                        Specialization = consultation.Doctor.Specialization
-                    }
+                    //Patient = new Model.Dtos.Patient.ResponsePatientDto()
+                    //{
+                    //    Id = consultation.Patient.Id,
+                    //    Name = consultation.Patient.Name,
+                    //    Age = consultation.Patient.Age,
+                    //    Gender = consultation.Patient.Gender,
+                    //    PhoneNumber = consultation.Patient.PhoneNumber,
+                    //    Address = consultation.Patient.Address,
+                    //},
+                    //Doctor = new Model.Dtos.Doctor.ResponseDoctorDto()
+                    //{
+                    //    Id = consultation.Doctor.Id,
+                    //    DoctorName = consultation.Doctor.DoctorName,
+                    //    Specialization = consultation.Doctor.Specialization
+                    //}
                 };
 
                 responseObject.IsSuccess = true;
@@ -287,24 +304,25 @@ namespace CMS.API.Controllers
                     Id = consultation.Id,
                     PatientId = consultation.PatientId,
                     DoctorId = consultation.DoctorId,
+                    DepartmentId = consultation.DepartmentId,
                     ConsultationDate = consultation.ConsultationDate,
                     ConsultationTime = consultation.ConsultationTime,
                     Remarks = consultation.Remarks,
-                    Patient = new Model.Dtos.Patient.ResponsePatientDto()
-                    {
-                        Id = consultation.Patient.Id,
-                        Name = consultation.Patient.Name,
-                        Age = consultation.Patient.Age,
-                        Gender = consultation.Patient.Gender,
-                        PhoneNumber = consultation.Patient.PhoneNumber,
-                        Address = consultation.Patient.Address,
-                    },
-                    Doctor = new Model.Dtos.Doctor.ResponseDoctorDto()
-                    {
-                        Id = consultation.Doctor.Id,
-                        DoctorName = consultation.Doctor.DoctorName,
-                        Specialization = consultation.Doctor.Specialization
-                    }
+                    //Patient = new Model.Dtos.Patient.ResponsePatientDto()
+                    //{
+                    //    Id = consultation.Patient.Id,
+                    //    Name = consultation.Patient.Name,
+                    //    Age = consultation.Patient.Age,
+                    //    Gender = consultation.Patient.Gender,
+                    //    PhoneNumber = consultation.Patient.PhoneNumber,
+                    //    Address = consultation.Patient.Address,
+                    //},
+                    //Doctor = new Model.Dtos.Doctor.ResponseDoctorDto()
+                    //{
+                    //    Id = consultation.Doctor.Id,
+                    //    DoctorName = consultation.Doctor.DoctorName,
+                    //    Specialization = consultation.Doctor.Specialization
+                    //}
                 };
 
                 responseObject.IsSuccess = true;

@@ -25,14 +25,10 @@ namespace CMS.API.Migrations
             modelBuilder.Entity("CMS.API.Model.Domain.Consultation", b =>
                 {
                     b.Property<int>("Id")
-                       .ValueGeneratedOnAdd()
-                       .HasColumnType("int");
-
-                    b.Property<int>("PatientId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("DoctorId")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("ConsultationDate")
                         .HasColumnType("datetime2");
@@ -40,13 +36,45 @@ namespace CMS.API.Migrations
                     b.Property<DateTime>("ConsultationTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("DepartmentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PatientId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Remarks")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("DepartmentId");
+
+                    b.HasIndex("DoctorId");
+
+                    b.HasIndex("PatientId");
+
                     b.ToTable("Consultations");
+                });
+
+            modelBuilder.Entity("CMS.API.Model.Domain.Department", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Departments");
                 });
 
             modelBuilder.Entity("CMS.API.Model.Domain.Disease", b =>
@@ -212,6 +240,12 @@ namespace CMS.API.Migrations
 
             modelBuilder.Entity("CMS.API.Model.Domain.Consultation", b =>
                 {
+                    b.HasOne("CMS.API.Model.Domain.Department", "Department")
+                        .WithMany("Consultations")
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("CMS.API.Model.Domain.Doctor", "Doctor")
                         .WithMany("Consultations")
                         .HasForeignKey("DoctorId")
@@ -223,6 +257,8 @@ namespace CMS.API.Migrations
                         .HasForeignKey("PatientId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Department");
 
                     b.Navigation("Doctor");
 
@@ -253,6 +289,11 @@ namespace CMS.API.Migrations
                         .HasForeignKey("PatientsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("CMS.API.Model.Domain.Department", b =>
+                {
+                    b.Navigation("Consultations");
                 });
 
             modelBuilder.Entity("CMS.API.Model.Domain.Doctor", b =>

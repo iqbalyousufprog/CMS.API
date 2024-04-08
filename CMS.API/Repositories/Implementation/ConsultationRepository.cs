@@ -11,7 +11,7 @@ namespace CMS.API.Repositories.Implementation
         }
         public override Task<IEnumerable<Consultation>> GetAllAsync()
         {
-            return base.GetAllAsync(p => p.Patient, p => p.Doctor);
+            return base.GetAllAsync(p => p.Patient, p => p.Doctor, p => p.Department);
         }
 
         public override Task<Consultation?> GetByIdAsync(int id)
